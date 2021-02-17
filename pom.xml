@@ -8,14 +8,16 @@
 		<version>2.4.1</version>
 		<relativePath/> <!-- lookup parent from repository -->
 	</parent>
-	<groupId>net.codejava</groupId>
-	<artifactId>dependencyInjection-Autowire</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<groupId>com.alextest</groupId>
+	<artifactId>InventoryApp</artifactId>
+	<version>1.0</version>
 	<name>InventoryApp</name>
-	<description>spring-1-to-many</description>
+	<description>Demo one to many with Spring Boot</description>
+
 	<properties>
 		<java.version>1.8</java.version>
 	</properties>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
@@ -41,24 +43,22 @@
 			<artifactId>mysql-connector-java</artifactId>
 			<scope>runtime</scope>
 		</dependency>
-		
-		
-		<dependency>
-		<groupId>org.webjars</groupId>
-		<artifactId>bootstrap</artifactId>
-		<version>4.3.1</version>
-		</dependency>
-		
-		<dependency>
-		<groupId>org.webjars</groupId>
-		<artifactId>webjars-locator-core</artifactId>
-		</dependency>
-		
 		<dependency>
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-starter-test</artifactId>
 			<scope>test</scope>
 		</dependency>
+		
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>bootstrap</artifactId>
+			<version>4.3.1</version>
+		</dependency>
+		<dependency>
+			<groupId>org.webjars</groupId>
+			<artifactId>webjars-locator-core</artifactId>
+		</dependency>
+		
 	</dependencies>
 
 	<build>

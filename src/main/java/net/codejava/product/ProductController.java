@@ -15,7 +15,7 @@ import net.codejava.category.CategoryRepository;
 public class ProductController {
 	
 	@Autowired
-	private ProductRepository ProductRepo;
+	private ProductRepository productRepo;
 	@Autowired
 	private CategoryRepository categoryRepo;
 	
@@ -35,7 +35,7 @@ public class ProductController {
 	@PostMapping("/products/save")
 	public String saveProduct(Product product) {
 		
-		ProductRepo.save(product);
+		productRepo.save(product);
 		return "redirect:/";
 		
 	}
@@ -43,11 +43,9 @@ public class ProductController {
 	
 	@GetMapping("/products")
 	public String listProducts(Model model) {
-		
-		List <Product> listProducts=ProductRepo.findAll();
-		model.addAttribute("list",listProducts);
-		
-		return "products";
+		List<Product> listProduct= productRepo.findAll();
+		model.addAttribute("listProducts",listProduct);
+	return "listproducts";
 	}
 	
 	
